@@ -7,7 +7,6 @@ typedef struct {
 } User;
 
 #define MAX_USERS 100
-
 User users[MAX_USERS];
 int userCount = 0;
 
@@ -52,7 +51,7 @@ int main() {
     while (1) {
         printf("Press '1' to Register \nPress '2' to Login \nPress '3' to Exit\n\n");
         scanf("%d", &option);
-
+			//	========
         if (option == 1) {
             registerUser();
         } else if (option == 2) {
